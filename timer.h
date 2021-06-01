@@ -36,3 +36,7 @@ typedef struct
 /* Assing & Map TIMER0 Peripheral Registers */
 #define TIMER0  ((TIMERx_RegDef_ty*) TIMER0_BASE_ADDR)
 
+
+/* APIs Supported by the driver */
+void timer_start_count(uint32_t time, void *callback);
+void timer_stop_count(void);
